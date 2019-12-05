@@ -1,31 +1,31 @@
 <!-- <form action="/users" method="post" accept-charset="UTF-8">
-  <input type="hidden" name="authenticity_token" value=" form_authenticity_token %>">
-  <label>Username</label>
-  <input type="text" name="user[username]"><br>
-  <label>Email</label>
-  <input type="email" name="user[email]"><br>
-  <label>Password</label>
-  <input type="password" name="user[password]">
+<input type="hidden" name="authenticity_token" value=" form_authenticity_token %>">
+<label>Username</label>
+<input type="text" name="user[username]"><br>
+<label>Email</label>
+<input type="email" name="user[email]"><br>
+<label>Password</label>
+<input type="password" name="user[password]">
 
-  <input type="submit" value="Submit">
+<input type="submit" value="Submit">
 </form> -->
 
-  <!--  <%=form_tag("/users", method: "post") do %>
-      <div> <%=label_tag "username", "Username"%> </div>
-      <div> <%=text_field_tag "user[username]"%> </div>
-      <div> <%=label_tag "email", "Email"%> </div>
-      <div> <%=text_field_tag "user[email]"%> </div>
-      <div> <%=label_tag "password", "Password"%> </div>
-      <div> <%=password_field_tag "user[password]"%> </div>
-      <div> <%=submit_tag value = "Submit"%> </div>
-    <% end %> -->
+<!--  <%=form_tag("/users", method: "post") do %>
+  <div> <%=label_tag "username", "Username"%> </div>
+  <div> <%=text_field_tag "user[username]"%> </div>
+  <div> <%=label_tag "email", "Email"%> </div>
+  <div> <%=text_field_tag "user[email]"%> </div>
+  <div> <%=label_tag "password", "Password"%> </div>
+  <div> <%=password_field_tag "user[password]"%> </div>
+  <div> <%=submit_tag value = "Submit"%> </div>
+  <% end %> -->
 
   <%= form_for @user do |u|%>
-    <%= label_tag "username"%><br />
-    <%= u.text_field :username%><br />
-    <%= label_tag "Email"%><br />
-    <%= u.email_field :email%><br/>
-    <%= label_tag "Password"%><br />
-    <%= u.password_field :password %><br />
-    <%= submit_tag "Submit" %>
-    <% end %>
+  <%= label_tag "username"%><br />
+  <%= u.text_field :username%><br />
+  <%= label_tag "Email"%><br />
+  <%= u.email_field :email%><br/>
+  <%= label_tag "Password"%><br />
+  <%= u.password_field :password %><br />
+  <%= submit_tag "Submit" %>
+  <% end %>

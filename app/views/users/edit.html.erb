@@ -1,0 +1,10 @@
+
+<%= form_for @user do |u|%>
+<%= label_tag "username"%><br />
+<%= u.text_field :username%><br />
+<%= label_tag "Email"%><br />
+<%= u.email_field :email%><br/>
+<%= label_tag "Password"%><br />
+<%= u.password_field :password %><br />
+<%= submit_tag "Submit" %>
+<% end %>
