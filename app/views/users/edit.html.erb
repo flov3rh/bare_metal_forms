@@ -1,4 +1,5 @@
 <%= form_for @user, url: { action: "update" } do |f| %>
+<%= render 'shared/error_messages' %>
 <%= f.label :username, "Username:" %><br>
 <%= f.text_field :username, value: @user[:username], placeholder: "Your user name here" %><br>
 <%= f.label :email, "Email:" %><br>
