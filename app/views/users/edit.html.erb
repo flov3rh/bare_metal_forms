@@ -1,10 +1,10 @@
 <%= form_for @user, url: { action: "update" } do |f| %>
 <%= render 'shared/error_messages' %>
 <%= f.label :username, "Username:" %><br>
-<%= f.text_field :username, value: @user[:username], placeholder: "Your user name here" %><br>
+<%= f.text_field :username, class: 'form-control', value: @user[:username], placeholder: "Your user name here" %><br>
 <%= f.label :email, "Email:" %><br>
-<%= f.text_field :email, value: @user[:email], placeholder: "Your email here" %><br>
+<%= f.text_field :email, class: 'form-control', value: @user[:email], placeholder: "Your email here" %><br>
 <%= f.label :password, "Password:" %><br>
-<%= f.password_field :password, value: @user[:password], placeholder: "Your password here" %><br>
+<%= f.password_field :password, class: 'form-control', value: @user[:password], placeholder: "Your password here" %><br>
 <%= f.submit "Submit"%>
 <% end %>
